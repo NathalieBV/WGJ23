@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - AudioCiudad
+  - AudioNaturaleza
+  - AmbCiudad
+  - AmbNaturaleza
   layers:
   - Default
   - TransparentFX
