@@ -29,6 +29,6 @@ public class DeathLogic : MonoBehaviour
     }
     public void ReloadScene()
     {
-        SceneManager.LoadScene("Perspectivas");
+        SceneManager.LoadScene("Level");
     }
 }
