@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathLogic : MonoBehaviour
 {
@@ -19,6 +20,15 @@ public class DeathLogic : MonoBehaviour
     // Update is called once per frame
     public void OnGameLost()
     {
-        
+        for (int i = 0; i < gameObjectsOnGameLost.Length; i++)
+        {
+            gameObjectsOnGameLost[i].gameObject.SetActive(true);
+
+
+        }
+    }
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene("Perspectivas");
     }
 }
